@@ -22,13 +22,11 @@ while (numCount > 9 || numCount <-9)
 
 int[] arr = new int[count];
 
-int dec = 10;
-
 int j = 0;
 
 while (j < count)
 {
-    arr[count - j - 1] = (num % dec);
+    arr[count - j - 1] = (num % 10);
     num /=10;
     j++;
 }
